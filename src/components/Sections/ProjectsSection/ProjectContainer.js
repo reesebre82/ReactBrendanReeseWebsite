@@ -17,12 +17,20 @@ const ProjectContainer = (props) => {
           <ProjectRow 
                 flexLeft='true' 
                 leftColor='rgb(81, 55, 164)' 
-                rightColor='rgb(242, 172, 108)'></ProjectRow>
+                rightColor='rgb(242, 172, 108)'
+                leftTitle="Reel Casters"
+                leftDescription="Developed using Swift"
+                rightTitle="Wordle Clone"
+                rightDescription="Developed uxsing C#"
+                row='0'></ProjectRow>
           <ProjectRow 
                 leftColor='rgb(156, 209, 251)' 
                 rightColor='rgb(66, 101, 236'
+                leftTitle="Sudoku Solver"
+                leftDescription="Developed using C++"
                 rightTitle="See all projects"
-                rightDescription="Over 15+ Projects"></ProjectRow>
+                rightDescription="Over 15+ Projects"
+                row='1'></ProjectRow>
       </div>
     )
   }

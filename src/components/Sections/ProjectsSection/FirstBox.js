@@ -1,8 +1,8 @@
 import React from "react";
 
-const ProjectBox = (props) => {
+const FirstBox = (props) => {
 
-    const ProjectBoxStyle = {
+    const FirstBoxStyle = {
         flexGrow: props.defaultFlex,
         backgroundColor: props.bgColor,
         borderRadius: '15px',
@@ -12,7 +12,7 @@ const ProjectBox = (props) => {
     }
 
     const DescriptionStyle = {
-        color: "lightgray",
+        color: "white",
         position: 'relative',
         left: 'calc(5% + 1px)',
         top: '5%',
@@ -34,13 +34,14 @@ const ProjectBox = (props) => {
     }
 
     return (
-      <div style={ProjectBoxStyle}
+      <div style={FirstBoxStyle}
             onMouseOver={MouseOver} 
             onMouseOut={MouseOut}>
             <p style={DescriptionStyle}>{props.description}</p>
             <h1 style={TitleStyle}>{props.title}</h1>
+            
       </div>
     )
   }
   
-export default ProjectBox
+export default FirstBox
